@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khmer-Words</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-icon">
+                <div class="logo">
+                    <img src="img/icon.jpg" alt="">
+                </div>
+                <div class="logo-title">
+                    វត្តពោធិគិរីរតនារាម
+                </div>
+            </div>
+            <div class="hamburger">
+                <input type="checkbox" name="" id="menu-toggle">
+                <label for="menu-toggle" class="menu-btn"><i class="fas fa-bars"></i></label>
+                
+                <ul class="menu-items">
+                    <div class="kingdom">
+                        <h4>ព្រះរាជាណាចក្រកម្ពុជា</h4>
+                    <h4>ជាតិ សាសនា  ព្រះមហាក្សត្រ</h4>
+                    </div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body">
+        <!-- Your main content goes here -->
+    </div>
+    <script>
+        document.addEventListener("click", function (event) {
+            var menuToggle = document.getElementById("menu-toggle");
+            var menuItems = document.querySelector(".menu-items");
+            var menuBtn = document.querySelector(".menu-btn");
+
+            if (!menuItems.contains(event.target) && event.target !== menuToggle && event.target !== menuBtn && !menuBtn.contains(event.target)) {
+                menuToggle.checked = false;
+            }
+        });
+    </script>
+</body>
+
+</html>
