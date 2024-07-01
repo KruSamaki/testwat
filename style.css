@@ -1,3 +1,4 @@
+/* Font definitions */
 @font-face {
     font-family: 'KhM1';
     src: url('fonts/khmer\ M1.volt.ttf') format('truetype');
@@ -17,6 +18,7 @@
     font-style: normal;
 }
 
+/* Global styles */
 body {
     margin: 0;
     padding: 0;
@@ -26,11 +28,12 @@ body {
     font-family: 'KhContent';
 }
 
+/* Header styles */
 header {
     width: 100%;
     height: 65px;
     background-color: #ffffff;
-    color:#f48c04;
+    color: #f48c04;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +46,9 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-.logo-title{
+
+/* Logo styles */
+.logo-title {
     font-family: 'KhM1';
     font-size: 22px;
 }
@@ -60,6 +65,7 @@ nav {
     margin-right: 25px;
 }
 
+/* Hamburger menu styles */
 .hamburger {
     margin-right: 25px;
     position: relative;
@@ -97,7 +103,8 @@ nav {
     padding: 1rem;
     line-height: 14px;
 }
-.hamburger .menu-items li:hover{
+
+.hamburger .menu-items li:hover {
     background-color: #f8bd98a4;
 }
 
@@ -106,35 +113,42 @@ nav {
     text-decoration: none;
 }
 
-.hamburger input[type="checkbox"]:checked~.menu-items {
+.hamburger input[type="checkbox"]:checked ~ .menu-items {
     right: 0;
 }
 
 label i {
     font-size: 23px;
 }
-.logo-icon{
+
+/* Additional logo-icon styles */
+.logo-icon {
     height: 100%;
 }
-.logo-icon img{
+
+.logo-icon img {
     height: 55px;
     margin-top: 10px;
 }
 
+/* Main body styles */
 .body {
     width: 80%;
     background-color: #e5e7eb;
     height: 100vh;
     margin: auto;
 }
-.kingdom{
+
+/* Kingdom section styles */
+.kingdom {
     width: 100%;
-    /* background-color: #333; */
     color: #fb7b03e4;
     text-align: center;
     line-height: 10px;
-    font-family: KhM1;
+    font-family: 'KhM1';
 }
+
+/* Responsive styles */
 @media (max-width: 768px) {
     .logo-icon {
         width: auto;
